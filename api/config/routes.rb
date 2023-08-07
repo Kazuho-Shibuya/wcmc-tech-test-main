@@ -4,6 +4,6 @@
 
 Rails.application.routes.draw do
   namespace :v1 do
-
+    get '/species/:location_id', to: 'species#index_in_location'
   end
 end
